@@ -1,0 +1,1688 @@
+@import "vars";
+@import "libs";
+@import "helpers";
+@import "fontawesome";
+@import "menu";
+@import "media";
+// @import "fonts";
+@font-face {
+    font-family: 'Teli-MX-Bold';
+    src: url('../fonts/Teli-MX-Bold.woff2') format("woff2");
+    src: url('teli-mx-bold-webfont.woff2') format('woff2'), url('teli-mx-bold-webfont.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Teli-MX-Light';
+    src: url('../fonts/Teli-MX-Light.woff2') format("woff2");
+    src: url('teli-mx-light-webfont.woff2') format('woff2'), url('teli-mx-light-webfont.woff') format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Teli-MT-Bold';
+    src: url('../fonts/Teli-MT-Bold.woff2') format("woff2");
+    src: url('teli-mt-bold-webfont.woff2') format('woff2'), url('teli-mt-bold-webfont.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Teli-MT-Light';
+    src: url('../fonts/Teli-MT-Light.woff2') format("woff2");
+    src: url('teli-mt-light-webfont.woff2') format('woff2'), url('teli-mt-light-webfont.woff') format('woff');
+    font-weight: 300;
+}
+
+// @import "../../node_modules/normalize.css/normalize.css";
+// @import "../../node_modules/slick-carousel/slick/slick";
+// @import "../../node_modules/magnific-popup/dist/magnific-popup";
+.rotate.turndown {
+    transform: rotate(180deg);
+    transition: ease 4s;
+}
+
+.rotate.turnup {
+    transform: rotate(0deg);
+    transition: ease 4s;
+}
+
+.switcher {
+    transition: all 1s ease-out;
+}
+
+.container {
+    padding: 0 140px;
+    max-width: 1640px;
+}
+
+// HEADER 
+.header {
+    position: relative;
+    padding-bottom: 180px;
+}
+
+.navig a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    &:hover {
+        color: $cyellow;
+    }
+}
+
+.navig li {
+    list-style: none;
+    padding: 34px 20px 0 0;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Teli-MX-Bold';
+}
+
+.navig .nav {
+    display: flex;
+}
+
+.eng {
+    font-weight: 300;
+}
+
+.main-image-insert {
+    display: none;
+}
+
+.eng:hover,
+.geo:hover {
+    color: $cyellow;
+}
+
+.navig {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navig img {
+    padding-top: 60px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main img {
+    position: absolute;
+    right: 75px;
+    top: 65px;
+    margin: 0;
+    padding: 0;
+    max-width: 681px;
+    max-height: 1258px;
+    z-index: 9999;
+    max-width: 960px;
+    max-height: 1300px;
+}
+
+.main-header {
+    color: $corange;
+    font-size: 120px;
+    max-width: 790px;
+    margin: 0;
+    padding-top: 165px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-family: 'Teli-MT-Bold';
+    letter-spacing: 5px;
+}
+
+#wine-switch {
+    display: none;
+}
+
+.switcher img {
+    display: inline-block;
+    padding: 0;
+    max-width: 440px;
+    cursor: pointer;
+}
+
+.main-info {
+    max-width: 860px;
+    max-height: 242px;
+    text-align: left;
+    font-family: 'Teli-MX-Light';
+    font-size: 22px;
+    font-weight: bold;
+    color: $cinfo;
+    line-height: 1.3;
+}
+
+// HEADER  
+// ABOUT US 
+.about {
+    display: block;
+    position: relative;
+    padding-bottom: 75px;
+    background-color: $cgreen;
+    & {
+        h1 {
+            color: $cyellow;
+        }
+    }
+}
+
+.section-text {
+    max-width: 595px;
+    max-height: 235px;
+    font-size: 22px;
+    color: white;
+}
+
+.section-text2 {
+    max-width: 690px;
+    max-height: 235px;
+    font-size: 22px;
+    color: white;
+    padding-top: 75px;
+    padding-bottom: 82px;
+}
+
+.btn {
+    background-color: transparent;
+    padding: 13px 128px;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    font-size: 31px;
+    font-family: 'Teli-MT-Bold';
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 31px;
+    font-family: 'Teli-MT-Bold';
+}
+
+.btn-info:hover {
+    border-color: $cyellow;
+    color: $cyellow;
+}
+
+.sectinon-image img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.section-header {
+    font-size: 120px;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-family: 'Teli-MT-Bold';
+    letter-spacing: 5px;
+}
+
+.section-main {
+    display: flex;
+}
+
+.section-main {
+    padding-top: 90px;
+}
+
+// ABOUT US 
+// WINE PEOPLE
+.people {
+    padding-bottom: 180px;
+    background-color: #FABD9F;
+}
+
+.peopleheader {
+    color: $cgreen1;
+}
+
+.btn-people {
+    color: $cdark;
+    border: 2px solid #353535;
+}
+
+.btn-people:hover {
+    color: $cgreen1;
+    border-color: $cgreen1;
+}
+
+.people-text {
+    color: $cdark;
+    font-size: 22px;
+    font-family: 'Teli-MX-Light';
+    font-weight: 300;
+    padding-bottom: 48px;
+    padding-top: 20px;
+    max-width: 821px;
+}
+
+.people-main {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.people-image img {
+    padding: 0 90px 105px 0;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+// WINE PEOPLE
+// WINE 
+.wine {
+    overflow: hidden;
+    position: relative;
+    color: white;
+    padding: 0;
+}
+
+.wine img {
+    width: 100vw;
+}
+
+.wine-info {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: $corange;
+    padding: 0 120px 120px 130px;
+}
+
+.wine-info h3 {
+    color: $cyellow2;
+    font-size: 120px;
+    font-family: 'Teli-MT-Bold';
+}
+
+.wine-info p {
+    max-width: 646px;
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    font-family: 'Teli-MX-Light';
+}
+
+// WINE 
+// CONTACT 
+.contact {
+    overflow: hidden;
+    margin-top: -4px;
+    position: relative;
+}
+
+.contact-image img {
+    position: absolute;
+    top: 160px;
+    right: 0;
+    max-width: 960px;
+    height: auto;
+    width: 45%;
+}
+
+.info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+    white-space: nowrap;
+}
+
+.info-box {
+    display: flex;
+}
+
+.short-info {
+    padding-top: 50px;
+}
+
+.contact-address {
+    background-color: $cred;
+    display: inline-block;
+    width: 960px;
+    & h2 {
+        font-size: 120px;
+        color: $cyellow;
+        font-family: 'Teli-MT-Bold';
+        font-weight: 700;
+    }
+}
+
+.short-info p {
+    font-family: 'Teli-MX-Light';
+    font-weight: 300;
+    line-height: 5px;
+    font-size: 22px;
+}
+
+.short-info h3 {
+    line-height: 5px;
+    font-family: 'Teli-MT-Bold';
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.short-info:first-child {
+    padding-right: 160px;
+}
+
+.short-info:last-child(4) {
+    padding-left: 160px;
+}
+
+.contact-info {
+    width: 960px;
+}
+
+iframe {
+    width: 960px;
+    height: 356px;
+}
+
+// CONTACT
+@media(max-width: 1800px) {
+    .container {
+        padding: 0 90px;
+        max-width: 1490px;
+    }
+    .main-image img {
+        max-height: 118vh;
+        right: 50px;
+        top: 59px;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 509px;
+        max-height: 230px;
+    }
+    .contact-image {
+        top: 30px;
+    }
+    .main-header {
+        padding-top: 50px;
+    }
+    .section-main {
+        padding-top: 25px;
+    }
+    .contact-image img {
+        top: 350px;
+        width: 40%;
+    }
+    .main-header,
+    .section-header,
+    .wine-info h3,
+    .contact-info h2 {
+        font-size: 110px;
+    }
+}
+
+@media(max-width: 1590px) {
+    .container {
+        padding: 0 90px;
+        max-width: 1250px;
+    }
+    .main img {
+        max-height: 126vh;
+        max-width: 120vw;
+        right: 119px;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 411px;
+        max-height: 418px;
+    }
+    .wine-info {
+        padding: 0 80px 80px 80px;
+    }
+    .wine-info h3 {
+        line-height: 0.5;
+    }
+    .wine-info p {
+        max-width: 627px;
+        line-height: 28px;
+        padding-bottom: 30px;
+    }
+    .people-image img {
+        padding: 0 20px 105px 0;
+    }
+    .contact-image img {
+        top: 400px;
+        width: 35%;
+    }
+    .short-info {
+        padding-top: 0;
+    }
+    .people {
+        padding-bottom: 98px;
+    }
+    .sectinon-image img {
+        max-width: 48vw;
+        max-height: 85vh;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 559px;
+        font-size: 20px;
+    }
+    .people-text {
+        font-size: 20px;
+    }
+    .section-text2 {
+        padding-bottom: 39px;
+        padding-top: 15px;
+    }
+    .btn {
+        font-size: 21px;
+    }
+    .main-info {
+        max-width: 60%;
+    }
+}
+
+@media(max-width: 1460px) {
+    .container {
+        padding: 0 80px;
+        max-width: 1250px;
+    }
+    .main {
+        padding-top: 10px;
+    }
+    .btn {
+        padding: 13px 118px;
+        font-size: 26px;
+    }
+    .main-image img {
+        max-height: 120vh;
+        right: 36px;
+        top: 80px;
+    }
+    .main-info {
+        max-width: 70%;
+    }
+    .main-header {
+        padding-top: 90px;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 489px;
+    }
+    .people-image img {
+        padding: 0 20px 105px 0;
+    }
+    .section-header {
+        padding-top: 70px;
+        padding-bottom: 13px;
+    }
+    .people {
+        padding-bottom: 98px;
+    }
+    .contact-image img {
+        width: 35%;
+    }
+    .contact-address {
+        width: 850px;
+    }
+    iframe {
+        width: 850px;
+        height: 356px;
+    }
+    .main-header,
+    .section-header,
+    .wine-info h3,
+    .contact-info h2 {
+        font-size: 90px;
+    }
+    .short-info {
+        padding-top: 0;
+    }
+    .sectinon-image img {
+        max-width: 53vw;
+        max-height: 75vh;
+    }
+    .wine img {
+        width: 150vw;
+        height: 105vh;
+    }
+    .section-text2 {
+        padding-bottom: 46px;
+        padding-top: 20px;
+    }
+    .main-info {
+        max-width: 53%;
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 1330px) {
+    .container {
+        padding: 0 90px;
+        max-width: 1050px;
+    }
+    .main-image img {
+        max-height: 116vh;
+        max-width: 100vw;
+        right: 80px;
+        top: 77px;
+    }
+    .main-info {
+        max-width: 53%;
+        font-size: 19px;
+    }
+    .main {
+        padding-top: 0px;
+    }
+    .main-header {
+        padding-top: 70px;
+    }
+    .about h1 {
+        max-width: 500px;
+    }
+    .sectinon-image img {
+        max-width: 60vw;
+        max-height: 70vh;
+    }
+    .wine img {
+        width: 150vw;
+        height: 105vh;
+    }
+    .contact-image img {
+        position: relative;
+        left: 25%;
+        bottom: 0;
+        right: 25%;
+        width: 55%;
+        bottom: 20px;
+        top: 77px;
+        padding-top: -18px;
+    }
+    .contact-address {
+        width: 1360px;
+    }
+    iframe {
+        width: 1360px;
+        height: 356px;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    .info {
+        padding-bottom: 90px;
+    }
+    .short-info {
+        padding-top: 20px;
+    }
+    .contact-info {
+        padding-bottom: 0;
+    }
+    .section-text,
+    .section-text2 {
+        font-size: 19px;
+    }
+    .people-text {
+        color: #121820;
+        font-size: 19px;
+    }
+    .wine-info p {
+        font-size: 19px;
+    }
+    .short-info p {
+        font-family: 'Teli-MX-Light';
+        font-weight: 300;
+        line-height: 5px;
+        font-size: 20px;
+    }
+    .main-header,
+    .section-header,
+    .wine-info h3,
+    .contact-info h2 {
+        font-size: 80px;
+    }
+    .people-image img {
+        padding: 0 20px 105px 68px;
+    }
+    .navig li {
+        font-size: 18px;
+    }
+    .sectinon-image img {
+        max-width: 48vw;
+        max-height: 70vh;
+    }
+}
+
+@media(max-width: 1260px) {
+    .container {
+        padding: 0 70px;
+        max-width: 1050px;
+    }
+    .main-image img {
+        max-height: 118vh;
+        right: 71px;
+        top: 70px;
+    }
+    .main-info {
+        max-width: 55%;
+    }
+    .header {
+        padding-bottom: 190px;
+    }
+    .main-header,
+    .section-header,
+    .wine-info h3,
+    .contact-info h2 {
+        font-size: 70px;
+    }
+    .sectinon-image img {
+        max-width: 60vw;
+        max-height: 70vh;
+    }
+    .section-text2 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .wine img {
+        width: 160vw;
+        height: 100vh;
+    }
+    .main-info {
+        max-width: 56%;
+        max-height: 371px;
+    }
+    .people-text {
+        color: #121820;
+        font-size: 17px;
+    }
+    .wine-info p {
+        font-size: 17px;
+    }
+    .short-info p {
+        font-size: 17px;
+    }
+    .main-info {
+        font-size: 17px;
+    }
+    .main-header {
+        max-width: 771px;
+    }
+    .navig li {
+        font-size: 16px;
+    }
+    .sectinon-image img {
+        max-width: 43vw;
+        max-height: 70vh;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 548px;
+    }
+}
+
+@media(max-width: 1160px) {
+    .logo {
+        z-index: 999999999999999999;
+    }
+    .container {
+        padding: 0 80px;
+        max-width: 950px;
+    }
+    .about-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .sectinon-image img {
+        max-width: 78vw;
+        max-height: 100%;
+        height: auto;
+        left: 20%;
+        right: 0;
+    }
+    .main-header {
+        max-width: 758px;
+    }
+    .people-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .people {
+        padding-bottom: 98px;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 800px;
+    }
+    .about-info {
+        padding-bottom: 550px;
+    }
+    .sectinon-image img {
+        max-width: 75vw;
+        max-height: 64vh;
+        left: 20%;
+        right: 0;
+    }
+    .about {
+        padding-bottom: 60px;
+    }
+    .people-main {
+        position: relative;
+    }
+    .people {
+        padding-bottom: 90px;
+    }
+    .btn-people {
+        position: absolute;
+        bottom: 0;
+        left: 36%;
+        right: 30%;
+    }
+    .section-info {
+        padding-right: 100px;
+    }
+    .wine-info {
+        text-align: center;
+        left: 25%;
+        right: 25%;
+    }
+    .wine-info h3 {
+        line-height: 0;
+    }
+    .sectinon-image img {
+        padding-bottom: 50px;
+    }
+    .btn {
+        padding: 13px 101px;
+    }
+    .wine-info h3 {
+        line-height: 0;
+        padding-bottom: 24px;
+        padding-top: 20px;
+    }
+    .sectinon-image img {
+        max-width: 1188px;
+        width: 100%;
+        height: 100%;
+        max-height: 690px;
+        padding-bottom: 50px;
+        left: 0;
+        bottom: 0;
+    }
+    .about-info {
+        padding-bottom: 769px;
+    }
+    .sectinon-image {
+        width: 100%;
+    }
+    .people-image img {
+        padding: 0 90px 105px 102px;
+        max-width: 50vw;
+        max-height: 40vh;
+    }
+    .main-image img {
+        max-height: 77vh;
+        right: 49px;
+        top: 92px;
+    }
+    .wine img {
+        width: 160vw;
+        height: 80vh;
+    }
+}
+
+@media(max-width:1000px) {
+    .nav li {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 39px;
+        height: 25px;
+        z-index: 5000;
+        position: fixed;
+        right: 80px;
+        margin-top: 15px;
+    }
+    .nav.active {
+        overflow: scroll;
+    }
+    .header__burger span {
+        position: absolute;
+        background-color: #121820;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger::after {
+        content: " ";
+        background-color: #121820;
+        width: 50%;
+        height: 1.5px;
+        right: 0;
+        position: absolute;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger::after {
+        bottom: 0;
+    }
+    .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 10px;
+        width: 100%;
+    }
+    .header__burger.active span {
+        transform: rotate(45deg);
+        top: 12px;
+    }
+    .nav.active {
+        top: 0;
+        & .main-image-insert {
+            display: block;
+            margin-left: -50%;
+            margin-top: -39px;
+            & img {
+                width: 50%;
+            }
+        }
+    }
+    .nav.active li {
+        display: block;
+    }
+    body.block {
+        overflow: hidden;
+    }
+    .navig {
+        position: fixed;
+        z-index: 99999999;
+        padding-top: 30px;
+    }
+    .navig ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navig ul li {
+        padding-top: 32px;
+    }
+    .navig ul li a {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .navig ul li span {
+        font-size: 40px;
+    }
+    .checking {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .switcher img {
+        width: 65px;
+        position: absolute;
+    }
+    .switcher {
+        position: absolute;
+        padding-right: 50px;
+        padding-top: 10px;
+    }
+    .checking span {
+        padding-left: 50px;
+        padding-right: 35px;
+    }
+    .nav {
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        transition: ease-in;
+        margin: 0 auto;
+        padding: 90px 0px 0px 0;
+        margin: 0 auto;
+        height: 100%;
+        overflow: auto;
+    }
+    .navig img {
+        position: fixed;
+        z-index: 99999999;
+        padding: 10px 0 0px 0px;
+    }
+    .nav li {
+        display: none;
+        margin: 20px 0 0 0;
+        padding: 0 0 0 0;
+        box-sizing: border-box;
+    }
+    .nav {
+        padding-top: 150px;
+    }
+    .main-image {
+        z-index: 1;
+        max-height: 180px;
+    }
+    .header__burger.active {
+        background-image: url(../img/footer-img.png);
+    }
+    .sectinon-image img {
+        max-width: 1100px;
+        width: 100%;
+        height: 100%;
+        max-height: 600px;
+        padding-bottom: 50px;
+        left: 0;
+        bottom: 0;
+    }
+    .about-info {
+        padding-bottom: 680px;
+    }
+    .sectinon-image {
+        width: 100%;
+    }
+    .btn-people {
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        right: 30%;
+    }
+    .main {
+        padding-top: 100px;
+    }
+    .main-image img {
+        max-height: 98vh;
+        max-width: 120vw;
+        right: 0px;
+        top: 256px;
+        bottom: 0;
+    }
+    .main-info {
+        max-width: 60%;
+    }
+    .about-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-info>form {
+        padding-left: 37%;
+        padding-top: 35px;
+    }
+    .wine-info {
+        text-align: center;
+        left: 22%;
+        right: 25%;
+        margin-left: -37px;
+        padding: 0 80px 94px 80px;
+        margin-right: -99px;
+    }
+    .nav {
+        padding-top: 100px;
+        height: 100%;
+    }
+}
+
+@media (max-width:901px) {
+    .container {
+        padding: 0 0px 0 60px;
+        max-width: 650px;
+    }
+    .about-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        padding-bottom: 100px;
+    }
+    .main-image img {
+        max-height: 79vh;
+        max-width: 120vw;
+        right: 0;
+        top: 231px;
+        bottom: 0;
+    }
+    .short-info:first-child {
+        padding-right: 110px;
+    }
+    .short-info:last-child(4) {
+        padding-left: 110px;
+    }
+    .short-info {
+        padding-top: 0px;
+    }
+    .section-info {
+        padding-right: 0;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 800px;
+        font-size: 20px;
+    }
+    .about-info>form {
+        padding-left: 29%;
+        padding-top: 35px;
+    }
+    .wine-info p {
+        max-width: 627px;
+        line-height: 28px;
+        padding-bottom: 30px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    iframe {
+        width: 1196px;
+        height: 300px;
+    }
+    .navig ul li {
+        padding-top: 25px;
+    }
+    nav ul {
+        margin-top: 10px;
+    }
+    .nav {
+        padding-top: 100px;
+        height: 103%;
+    }
+    .nav {
+        padding-top: 164px;
+        height: 97%;
+    }
+    .peopleheader {
+        width: 65px;
+    }
+}
+
+@media(max-width: 701px) {
+    .container {
+        padding: 0 0px 0 40px;
+        max-width: 400px;
+    }
+    .nav {
+        padding-top: 120px;
+        height: 100%;
+    }
+    .main-header,
+    .section-header,
+    .wine-info h3,
+    .contact-info h2 {
+        font-size: 65px;
+        letter-spacing: 1px;
+    }
+    .peopleheader {
+        white-space: nowrap;
+    }
+    .main-image img {
+        max-height: 76vh;
+        max-width: 120vw;
+        right: 0;
+        top: 169px;
+        bottom: 0;
+    }
+    .people-image img {
+        padding: 2px 0px 115px 36%;
+        max-width: 50vw;
+        max-height: 100vh;
+    }
+    .people-text {
+        max-width: 617px;
+        width: 110%;
+        font-size: 16px;
+    }
+    .section-header {
+        padding-top: 70px;
+        padding-bottom: 26px;
+    }
+    .btn {
+        padding: 9px 73px;
+        font-size: 19px;
+    }
+    .btn-people {
+        left: 48%;
+    }
+    .about-info>form {
+        padding-left: 48%;
+        padding-top: 21px;
+    }
+    .about-info {
+        padding-bottom: 510px;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 800px;
+        width: 117%;
+        font-size: 17px;
+    }
+    .about h1 {
+        line-height: 78px;
+    }
+    .navig img {
+        padding: 0px 0 0px 0px;
+    }
+    .sectinon-image img {
+        max-width: 800px;
+        max-height: 430px;
+    }
+    .main-info {
+        max-width: 306px;
+        max-height: 152px;
+        font-size: 16px;
+    }
+    .short-info p {
+        font-size: 16px;
+    }
+    iframe {
+        width: 800px;
+        height: 356px;
+    }
+    .contact-image {
+        padding-bottom: 30px;
+        margin-top: -34px;
+    }
+}
+
+@media (max-width:576px) {
+    .people-text {
+        max-width: 617px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .section-header {
+        padding-top: 70px;
+        padding-bottom: 26px;
+    }
+    .container {
+        padding: 0 0px 0 40px;
+        max-width: 400px;
+    }
+    .nav {
+        padding-top: 105px;
+        height: 100%;
+    }
+    .main-header,
+    .section-header,
+    .wine-info h3,
+    .contact-info h2 {
+        font-size: 55px;
+        letter-spacing: 1px;
+    }
+    .peopleheader {
+        white-space: nowrap;
+    }
+    .btn {
+        padding: 9px 73px;
+        font-size: 19px;
+    }
+    .btn-people {
+        left: 32%;
+    }
+    .about-info>form {
+        padding-left: 32%;
+        padding-top: 21px;
+    }
+    .about-info {
+        padding-bottom: 510px;
+    }
+    .short-info h3 {
+        font-size: 15px;
+    }
+    .info {
+        padding-bottom: 67px;
+    }
+    .short-info:first-child {
+        padding-right: 56px;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 800px;
+        width: 137%;
+        font-size: 17px;
+    }
+    .about h1 {
+        line-height: 78px;
+    }
+    .navig img {
+        padding: 0px 0 0px 0px;
+    }
+    .sectinon-image img {
+        max-width: 800px;
+        max-height: 430px;
+    }
+    .main-info {
+        max-width: 306px;
+        max-height: 152px;
+        font-size: 16px;
+    }
+    .short-info p {
+        font-size: 16px;
+    }
+    iframe {
+        width: 723px;
+        height: 248px;
+    }
+    .contact-image {
+        padding-bottom: 30px;
+        margin-top: -34px;
+    }
+    .main-image img {
+        max-height: 78vh;
+        max-width: 120vw;
+        right: 0;
+        top: 317px;
+        bottom: 0;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 463px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .people-image img {
+        padding: 2px 0px 115px 15%;
+        max-width: 50vw;
+        max-height: 100vh;
+    }
+    .wine-info {
+        text-align: center;
+        left: 22%;
+        right: 8%;
+        margin-left: -35px;
+        padding: 0px 40px 72px 34px;
+        margin-right: 19px;
+    }
+    .wine-info p {
+        max-width: 306px;
+        line-height: 28px;
+        padding-bottom: 30px;
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .wine img {
+        width: 181vw;
+        height: 90vh;
+    }
+    .navig img {
+        margin-top: -9px;
+    }
+    .switcher img {
+        width: 45px;
+    }
+    .checking span {
+        padding-left: 31px;
+        padding-right: 35px;
+    }
+    .people-text {
+        max-width: 474px;
+    }
+}
+
+@media (max-width:540px) {
+    .main-header {
+        padding-top: 68px;
+        padding-bottom: 20px;
+    }
+    .people-text {
+        max-width: 617px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .section-header {
+        padding-top: 70px;
+        padding-bottom: 26px;
+    }
+    .container {
+        padding: 0 0px 0 40px;
+        max-width: 400px;
+    }
+    .short-info:first-child {
+        padding-right: 40px;
+    }
+    .main-header,
+    .section-header,
+    .wine-info h3,
+    .contact-info h2 {
+        font-size: 45px;
+        letter-spacing: 1px;
+    }
+    .main-image img {
+        top: 20px;
+        max-height: 64vh;
+        top: 358px;
+        right: 0px;
+    }
+    .section-header {
+        padding-top: 62px;
+        padding-bottom: 0;
+    }
+    .main-info {
+        max-width: 246px;
+        max-height: 209px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 391px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .about-info {
+        padding-bottom: 490px;
+    }
+    .short-info p {
+        font-size: 14px;
+    }
+    iframe {
+        height: 210px;
+    }
+    .main {
+        padding-top: 75px;
+    }
+    .btn-people {
+        left: 21%;
+    }
+    .about-info>form {
+        padding-left: 21%;
+        padding-top: 21px;
+    }
+    .people-image img {
+        padding: 15px 0px 115px 0;
+        margin-right: 20px;
+    }
+    .people {
+        padding-bottom: 60px;
+    }
+    .people-text {
+        max-width: 617px;
+        width: 92%;
+        font-size: 16px;
+    }
+    .people-text>p:last-child {
+        display: none;
+    }
+    .navig ul li a {
+        font-size: 25px;
+    }
+    .navig ul li {
+        padding-top: 20px;
+    }
+    .navig ul li span {
+        font-size: 30px;
+    }
+    .navig img {
+        margin-top: 0px;
+    }
+    iframe {
+        height: 188px;
+        width: 437px;
+    }
+    .people-text {
+        max-width: 454px;
+    }
+}
+
+@media (max-width:460px) {
+    .main-header {
+        font-size: 40px;
+        max-width: 265px;
+        margin: 0;
+        padding-top: 49px;
+        padding-bottom: 20px;
+        line-height: 56px;
+        letter-spacing: 5px;
+    }
+    .container {
+        padding: 0 0px 0 25px;
+        max-width: 360px;
+    }
+    .navig .logo {
+        margin-top: -10px;
+        width: 114px;
+    }
+    .header__burger {
+        right: 50px;
+        margin-top: 0px;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 440px;
+        width: 86%;
+        font-size: 16px;
+    }
+    .sectinon-image img {
+        max-height: 341px;
+    }
+    .about-info {
+        padding-bottom: 405px;
+    }
+    .main-info {
+        max-width: 217px;
+        max-height: 170px;
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .main-image img {
+        max-height: 52vh;
+        top: 385px;
+        right: 0px;
+    }
+    .about h1 {
+        line-height: 61px;
+    }
+    .section-header {
+        padding-top: 31px;
+        padding-bottom: 0;
+    }
+    .section-main {
+        padding-top: 19px;
+    }
+    .contact-image {
+        padding-bottom: 39px;
+        margin-top: -34px;
+    }
+    .short-info p {
+        font-size: 11px;
+    }
+    .short-info h3 {
+        font-size: 14px;
+    }
+    .info {
+        padding-bottom: 45px;
+    }
+    .navig ul li {
+        padding-top: 19px;
+    }
+    .wine-info {
+        left: 31%;
+        right: 17%;
+        margin-left: -73px;
+        padding: 0px 22px 52px 22px;
+        margin-right: -33px;
+    }
+    .btn-people {
+        left: 20%;
+    }
+    .about-info>form {
+        padding-left: 20%;
+    }
+    .people-text {
+        max-width: 364px;
+    }
+}
+
+@media(max-width: 360px) {
+    .short-info p {
+        font-size: 10px;
+    }
+    .short-info h3 {
+        font-size: 14px;
+    }
+    .short-info>h3:first-child {
+        width: 100px;
+    }
+    .container {
+        max-width: 320px;
+    }
+    .main-header,
+    .section-header,
+    .wine-info h3,
+    .contact-info h2 {
+        font-size: 39px;
+        letter-spacing: 1px;
+    }
+    .wine-info p {
+        max-width: 384px;
+        line-height: 28px;
+        padding-bottom: 30px;
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .main-info {
+        max-width: 181px;
+        max-height: 157px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .main {
+        padding-top: 95px;
+        padding-bottom: 83px;
+    }
+    .section-header {
+        padding-top: 35px;
+    }
+    .section-text2,
+    .section-text {
+        max-width: 430px;
+        width: 95%;
+        font-size: 13px;
+    }
+    .section-text2 {
+        padding-bottom: 10px;
+        padding-top: 8px;
+    }
+    .about h1 {
+        line-height: 61px;
+    }
+    .about-main {
+        padding-top: 0px;
+    }
+    .main-image img {
+        max-height: 59vh;
+        top: 407px;
+        right: 0px;
+    }
+    .navig img {
+        margin-top: 5px;
+        width: 114px;
+    }
+    .about-info>form {
+        padding-left: 25%;
+        padding-top: 21px;
+    }
+    .btn-people {
+        left: 25%;
+    }
+    .sectinon-image img {
+        max-height: 251px;
+        padding-bottom: 40px;
+    }
+    .people-image img {
+        padding: 0px 0px 78px 0;
+        margin-right: 0px;
+    }
+    .short-info>h3 {
+        white-space: break-spaces;
+        line-height: 17px;
+    }
+    .short-info:first-child {
+        padding-right: 20px;
+    }
+    iframe {
+        width: 385px;
+        height: 160px;
+    }
+    .short-info h3 {
+        width: 20px;
+    }
+    .about-info {
+        padding-bottom: 280px;
+    }
+    .people-text {
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    .people {
+        padding-bottom: 52px;
+    }
+    .people-image img {
+        padding: 2px 0px 92px 1%;
+        max-width: 50vw;
+        max-height: 29vh;
+    }
+    .btn {
+        padding: 7px 50px;
+        font-size: 14px;
+    }
+    .wine img {
+        width: 209vw;
+        height: 105vh;
+    }
+    .wine-info p {
+        padding-bottom: 27px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .wine-info {
+        left: 31%;
+        right: 17%;
+        margin-left: -73px;
+        padding: 0px 22px 52px 22px;
+        margin-right: -33px;
+    }
+    .wine-info h3 {
+        padding-bottom: 15px;
+        padding-top: 18px;
+    }
+    .header__burger {
+        right: 45px;
+        margin-top: 0;
+    }
+    .navig img {
+        margin-top: 5px;
+        width: 114px;
+    }
+    .navig ul li a {
+        font-size: 20px;
+    }
+    .navig ul li {
+        padding-top: 16px;
+    }
+    .main-header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .switcher img {
+        margin-top: 0;
+        width: 45px;
+    }
+    .contact-image {
+        padding-bottom: 47px;
+        margin-top: -58px;
+    }
+    .info {
+        padding-bottom: 35px;
+    }
+    .people-text {
+        max-width: 290px;
+    }
+}

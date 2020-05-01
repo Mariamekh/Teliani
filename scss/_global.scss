@@ -1,0 +1,43 @@
+body {
+    font-family: "Teli-MX-Bold";
+    font-weight: 400;
+    background-color: #fff;
+    color: white;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.suptittle-left {
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: "Fira Sans";
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 7.33px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: right;
+    padding-left: 103px;
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        left: 0;
+        top: 50%;
+    }
+}
